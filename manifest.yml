@@ -1,0 +1,9 @@
+---
+applications:
+- name: slack_sample
+  random-route: true
+  path: ./
+  memory: 128M
+  buildpack: python_buildpack
+  command: python app.py
+  health-check-type: process
